@@ -1,8 +1,9 @@
 module.exports = function() {
   $.gulp.task('scripts:dev', () => {
-    return $.gulp.src('src/static/js/main.js')
+    return $.gulp.src('src/static/js/*.js')
           .pipe($.plag.plumber())
           .pipe($.plag.plumber.stop())
+          .pipe($.plag.concat('main.js'))
           .pipe($.gulp.dest('build/static/js'))
           .pipe($.bs.reload({
             stream: true
@@ -10,9 +11,10 @@ module.exports = function() {
   })
 
   $.gulp.task('scripts:build', () => {
-    return $.gulp.src('src/static/js/main.js')
+    return $.gulp.src('src/static/js/*.js')
       .pipe($.plag.plumber())
       .pipe($.plag.plumber.stop())
+      .pipe($.plag.concat('main.js'))
       .pipe($.plag.uglify())
       .pipe($.gulp.dest('build/static/js'))
       .pipe($.bs.reload({
@@ -32,12 +34,4 @@ module.exports = function() {
       }))
   })
 
-  // $.gulp.task('modules', () => {
-  //   return $.gulp.src(['src/static/libs/modules.js'])
-  //       .pipe($.plag.concat('modules.js'))
-  //       .pipe($.gulp.dest('build/static/libs'))
-  //       .pipe($.bs.reload({
-  //         stream: true
-  //       }))
-  // })
 }

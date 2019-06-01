@@ -1,6 +1,6 @@
 module.exports = function() {
   $.gulp.task('styles:build', () => {
-    return $.gulp.src('src/static/sass/main.scss')
+    return $.gulp.src('src/static/sass/main.{sass,scss}')
       .pipe($.plag.plumber())
       .pipe($.plag.sourcemaps.init())
       .pipe($.plag.sass())
@@ -23,7 +23,7 @@ module.exports = function() {
   })
 
   $.gulp.task('styles:dev', () => {
-    return $.gulp.src('src/static/sass/main.scss')
+    return $.gulp.src('src/static/sass/main.{sass,scss}')
       .pipe($.plag.plumber())
       .pipe($.plag.sass())
       .pipe($.plag.autoprefixer({
@@ -39,5 +39,13 @@ module.exports = function() {
       .pipe($.bs.reload({
         stream: true
       }));
+  })
+
+  $.gulp.task('styles:libs', () => {
+    return $.gulp.src(['node_modules/slick-carousel/slick/slick-theme.css',
+                      'node_modules/slick-carousel/slick/slick.css'])
+      .pipe($.plag.csso())
+      .pipe($.plag.rename('libs-css.min.css'))
+      .pipe($.gulp.dest('build/static/css'))
   })
 }
