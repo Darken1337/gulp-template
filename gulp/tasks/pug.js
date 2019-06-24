@@ -11,4 +11,19 @@ module.exports = function () {
         stream: true
       }));
   })
+
+  $.gulp.task('pug:build', () => {
+    return $.gulp.src('src/pug/pages/*.pug')
+      .pipe($.plag.plumber())
+      .pipe($.plag.pug({
+        pretty: false
+      }))
+      .pipe($.plag.plumber.stop())
+      .pipe($.gulp.dest('build'))
+      .pipe($.bs.reload({
+        stream: true
+      }));
+  })
+
+  
 }

@@ -40,12 +40,14 @@
   transform: translateY(-50%);
 }
 
-@mixin proxnov-r {
-  font-family: 'ProxNovReg';
-  font-weight: 500
+@mixin semiBold{
+  font-family: 'pop-semibold', sans-serif;
 }
 
-@mixin proxnov-b {
-  font-family: 'ProxNovBold';
-  font-weight: 700
+@mixin medium{
+  font-family: 'pop-medium', sans-serif;
+}
+
+@mixin thin{
+  font-family: 'pop-thin', sans-serif;
 }

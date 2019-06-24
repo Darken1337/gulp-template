@@ -1,146 +1,17 @@
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
-    link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
-    title Photoset
-  body
-   header#header
-    nav.navigation-primary
-     ul.menu-primary
-      li.menu-primary__item: a.menu-primary__link(href="#") 5 C New york
-      li.menu-primary__item: a.menu-primary__link(href="#") Monday, March 6
-      li.menu-primary__item: a.menu-primary__link(href="#") Blog
-      li.menu-primary__item: a.menu-primary__link(href="#") Forums
-      li.menu-primary__item: a.menu-primary__link(href="#") Contact
-      li.menu-primary__item: a.menu-primary__link(href="#") Buy now
-     ul.socials-primary
-      .socials-primary__icon
-      .socials-primary__icon
-      .socials-primary__icon
-      .socials-primary__icon
-     .sign-in-primary
-    nav.navigation
-     .logo: img.logo__content(src="" alt="logo")
-     ul.menu
-      li.menu__item: a.menu__link(href="#") Fashion
-      li.menu__item: a.menu__link(href="#") Style Hunter
-      li.menu__item: a.menu__link(href="#") Lifestyle
-      li.menu__item: a.menu__link(href="#") Celebrity
-      li.menu__item: a.menu__link(href="#") Videos
-      li.menu__item: a.menu__link(href="#") Interviews
-     .navigation-search-panel
-      input(type="search").navigation-search-panel__input
-   section#freshnews
-      .banner
-       .news
-        .news__publisher StyleHunter
-        .news__views 336.4k  
-        h2.news__title Congress Is About To Hand Over Your Personal Browsing Data
-        .news__author John
-        .news__time-ago 2 hours ago
-       .news
-        .news__publisher Vogue
-        .news__views 36.6k  
-        h2.news__title Congress Is About To Hand Over Your Personal Browsing Data
-        .news__author John
-        .news__time-ago 2 hours ago 
-       .news
-        .news__publisher Fashion
-        .news__views 42.4k  
-        h2.news__title What to Wear: 9+ Cute Work Outfits to Wear This Summer
-        .news__author John
-        .news__time-ago 2 hours ago
-   main#main
-    .magazine-prev
-      nav.magazine-prev__navigation
-        h4.magazine-prev__title
-        ul.magazine-prev__menu
-          li.magazine-prev__item: a.magazine-prev__link(href="#") world
-          li.magazine-prev__item: a.magazine-prev__link(href="#") people
-          li.magazine-prev__item: a.magazine-prev__link(href="#") food
-          li.magazine-prev__item: a.magazine-prev__link(href="#") animals
-      .magazine-prev-article
-        .magazine-prev-article__image: img(src="", alt="yellow cube")
-        .magazine-prev-article__content
-          .magazine-prev-article__publisher Vogue
-          .magazine-prev-article__views 36.6k  
-          h2.magazine-prev-article__title Congress Is About To Hand Over Your Personal Browsing Data
-          .magazine-prev-article__author John
-          .magazine-prev-article__time-ago 2 hours ago
-          p.magazine-prev-article__text News is a direct tool of influence on public consciousness. The goal of the news is to provide to the society objective information about a particular event or action.
-   sidebar#sidebar
-    .sidebar-socials
-     .sidebar-socials__item.sidebar-socials__item--facebook
-     .sidebar-socials__item.sidebar-socials__item--twitter
-     .sidebar-socials__item.sidebar-socials__item--google
-     .sidebar-socials__item.sidebar-socials__item--youtube
-     .sidebar-socials__item.sidebar-socials__item--instagram
-     .sidebar-socials__item.sidebar-socials__item--vkontakte
-    .popular-post-wrapper
-     .popular-post
-      h3.popular-post__title
-      .popular-post__content
-       .news.news--compact
-         .news__publisher StyleHunter
-         .news__views 336.4k  
-         h2.news__title Congress Is About To Hand Over Your Personal Browsing Data
-         .news__author John
-         .news__time-ago 2 hours ago
-     .interesting-articles
-      .interesting-article
-       .interesting-article__photo
-       h3.interesting-article__title Scarlett’s disappointment at latest accolade
-       .interesting-article__author John
-       .interesting-article__time-ago 2hours-ago
-      .interesting-article
-       .interesting-article__photo
-       h3.interesting-article__title Scarlett’s disappointment at latest accolade
-       .interesting-article__author John
-       .interesting-article__time-ago 2hours-ago
-      .interesting-article
-       .interesting-article__photo
-       h3.interesting-article__title Most Beautiful Things to Do in Sidney with Your BF
-       .interesting-article__author John
-       .interesting-article__time-ago 2hours-ago
-      .interesting-article
-       .interesting-article__photo
-       h3.interesting-article__title Life’s challenges force us to harden up
-       .interesting-article__author John
-       .interesting-article__time-ago 2hours-ago
-      .interesting-article
-       .interesting-article__photo
-       h3.interesting-article__title 9 Wireless Headphones Must Have For High-R
-       .interesting-article__author John
-       .interesting-article__time-ago 2hours-ago
-     .ads-wrapper
-      .ad
-        .ad__title That is an amazing shot
-        .ad__description Follow us on Instagram to get latest inspiration of fashion.
-      .ad
-        .ad__icon
-        .ad__title Instagram
-        .ad__description Follow us on Instagram to get latest inspiration of fashion.
-      .ad
-        .ad__title Instagram
-        .ad__description Follow us on Instagram to get latest inspiration of fashion.
-      .ad.ad--red
-        .ad__title That is an amazing shot
-        .ad__description Follow us on Instagram to get latest inspiration of fashion.
-      .ad.ad-cyan
-        | Empty
-    
+- var activePage = {home: false,about: false, contact: true, getStarted: false, portfolio: false}
 
 
+if activePage.about
+  include pages/about
 
+if activePage.home
+  include pages/home
 
+if activePage.contact
+  include pages/contact
 
+if activePage.getStarted
+  include pages/get-started
 
-
-
-
-
-
-
+if activePage.portfolio
+  include pages/portfolio
