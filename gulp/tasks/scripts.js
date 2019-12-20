@@ -1,6 +1,6 @@
 module.exports = function() {
   $.gulp.task('scripts:dev', () => {
-    return $.gulp.src('src/static/js/single-portfolio.js')
+    return $.gulp.src('src/static/js/main.js')
           .pipe($.plag.plumber())
           .pipe($.plag.plumber.stop())
           .pipe($.plag.concat('main.js'))

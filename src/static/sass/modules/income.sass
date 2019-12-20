@@ -1,0 +1,95 @@
+.income
+    &__header
+        font-weight: 900
+        font-size: 52px
+        line-height: 120%
+        color: $black
+        max-width: 931px
+        margin-bottom: 15px
+        .red
+            font-size: 60px
+    &__subtitle
+        font-size: 24px
+        line-height: 134.51%
+        color: $black
+        margin-bottom: 27px
+    &__lists
+        display: flex
+        font-size: 18px
+        color: $black
+        & >*
+            width: calc(100%/4)
+            &:not(:last-child)
+                margin-right: 30px
+
+.income-list
+    li
+        position: relative
+        &:not(:last-child)
+            margin-bottom: 17px
+        &::before
+            content: ''
+            position: absolute
+            top: .4em
+            left: -12px
+            width: 6px
+            height: 6px
+            background-color: #D90916
+            border-radius: 50%
+
+.results
+    margin-top: 110px
+    &__header
+        font-weight: 900
+        font-size: 44px
+        text-align: center
+        color: $black
+        max-width: 730px
+        margin: 0 auto 50px
+    &__content
+        display: flex
+        & >*:not(:last-child)
+            margin-right: 30px
+        & >*
+            width: calc(100%/3)
+
+
+.result-card
+    padding-top: 113px
+    text-align: center
+    &__image
+        border-radius: 50%
+        overflow: hidden
+        margin: -100px auto 20px
+    &__inner
+        background-color: #fff
+        border-radius: 12px
+        padding: 0 30px 30px
+        min-height: 470px
+    &__content
+        text-align: initial
+        display: flex
+        flex-direction: column
+        min-height: 297px
+    &__name
+        font-weight: 900
+        font-size: 32px
+        line-height: 120%
+        text-align: center
+        color: $black
+        margin-bottom: 15px
+    &__cell
+        &-head
+            font-size: 16px
+            line-height: 140%
+            margin-bottom: 5px
+            &.red
+                font-weight: 500
+        &-body
+            font-size: 18px
+            line-height: 130%
+            color: $black
+        &:not(:last-child)
+            margin-bottom: 24px
+        &:last-child
+            margin-top: auto

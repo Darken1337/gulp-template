@@ -1,11 +1,57 @@
-.title-secondary
+.title-size-1
+  font-weight: 900
+  font-size: 64px
+  line-height: 60px
+  color: #FFFFFF
+  position: relative
 
+.title-w-circle
+  position: relative
+  span
+    position: relative
+    z-index: 2
+  &::before
+    position: absolute
+    top: -83px
+    left: -173px
+    z-index: 0
 
-.title-primary
+.circle-brown
+  &::before
+    content: url('../img/decor-dot.svg')
 
+.circle-gray
+  &::before
+    content: url('../img/decor-dot-gray.svg')
 
-.title-tertiary
+.circle-brown-light
+  &::before
+    content: url('../img/decor-dot-brown-light.svg')
 
+.font-18
+  font-size: 18px
+  line-height: 20px
+
+.color-white
+  color: $white
+
+.red
+  color: #d90916
+
+.gray
+  color: #828282
+
+.button_red
+  background: linear-gradient(81.87deg, #BD0915 0.77%, #FF2432 98.79%)
+
+.font-bold
+  font-weight: 700
+
+.text-align-left
+  text-align: left
+
+.text-align-right
+  text-align: right
 
 +respond(tablet)
 

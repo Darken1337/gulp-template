@@ -1,0 +1,57 @@
+.specialization
+    &__header
+        display: flex
+        margin-bottom: 87px
+    &__col
+        flex: 1 1 50%
+        &:not(:last-child)
+            margin-right: 70px
+    &__title
+        font-weight: 900
+        font-size: 52px
+        line-height: 110%
+        color: $black
+        margin-bottom: 30px
+    &__subtitle
+        font-size: 30px
+        color: $black
+        max-width: 445px
+        line-height: 144.5%
+    &__text
+        font-size: 30px
+        line-height: 144.5%
+        color: $black
+        max-width: 731px
+        margin: 0 auto
+
+.numbers
+    display: flex
+    flex-wrap: wrap
+    margin: -20px
+    overflow: hidden
+    & > *
+        width: calc(100%/2 - 40px)
+        margin: 20px
+
+.number
+    &__main
+        font-weight: 900
+        font-size: 64px
+        line-height: .8
+        letter-spacing: -0.04em
+        color: $black
+    &__subtitle
+        font-size: 18px
+        line-height: 140%
+        color: #828282
+
+.testimonials
+    &__header
+        font-weight: 900
+        font-size: 64px
+        line-height: 63px
+        margin-bottom: 60px
+        color: $black
+    &__content
+        & > *:not(:last-child)
+            margin-bottom: 24px

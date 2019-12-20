@@ -1,0 +1,77 @@
+.clients
+    &__content
+        display: flex
+        margin-bottom: 130px
+        align-items: flex-end
+        & >*:not(:last-child)
+            margin-right: 125px
+    &__title
+        font-weight: 900
+        font-size: 52px
+        line-height: 110%
+        color: $black
+    &__text
+        font-size: 30px
+        line-height: 134.51%
+        max-width: 350px
+        width: 100%
+
+.attraction
+    &__header
+        display: flex
+        justify-content: center
+        font-weight: 550
+        font-size: 36px
+        line-height: 110%
+        color: $black
+        margin-bottom: 83px
+        &-text
+            position: relative
+            &::before
+                content: ''
+                background-image: url('../img/decor-dot-gray.svg')
+                background-size: 100% auto
+                position: absolute
+                left: -130px
+                top: 50%
+                transform: translateY(-50%)
+                display: block
+                width: 184px
+                height: 184px
+            span
+                position: relative
+                z-index: 2
+    
+    &__list
+        display: flex
+        & >*:not(:last-child)
+            margin-right: 20px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 70%
+                border: 1px dashed #DDDDDD
+                top: 41px
+                right: 0
+
+.step
+    width: calc(100%/3 - 13px)
+    &__number
+        font-weight: 900
+        font-size: 72px
+        line-height: 110%
+        letter-spacing: -0.04em
+        color: #DFDFDF
+    &__title
+        font-weight: bold
+        font-size: 30px
+        line-height: 110%
+        color: $black
+        margin-bottom: 16px
+    &__text
+        max-width: 340px
+        font-size: 18px
+        line-height: 140%
+        color: $gray
+                    
