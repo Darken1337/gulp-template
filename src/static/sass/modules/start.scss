@@ -1,0 +1,106 @@
+#s-start{
+    padding: 116px 0 59px;
+}
+
+.start{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__image{
+        max-width: 413px;
+        width: 100%;
+    }
+    &__content{
+        padding-top: 43px;
+        .title-secondary{
+            margin-left: -60px;
+            margin-bottom: 48px;
+        }
+        .list{
+            margin-left: 20%;
+        }
+    }
+
+    &__title-wrap{
+        padding-right: 296px;
+    }
+
+    &__subtitle{
+        width: 274px;
+        height: 274px;
+
+        position: absolute;
+        top: -30px;
+        right: -35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-image: url(../img/svg/eclipse_2.svg);
+        background-size: 100% auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        p{
+            max-width: 147px;
+            color: #637074;
+            margin-top: 30px;
+            font-style: italic;
+            transform: rotate(-8deg);
+            font-family: $tt;
+        }
+    }
+}
+
+#s-learn{
+    padding: 59px 0 190px;
+}
+
+.learn{
+    display: flex;
+
+    &__content{
+        padding-top: 50px;
+        position: relative;
+        .title-secondary{
+            margin-bottom: 30px;
+        }
+        .list{
+            max-width: 490px;
+            margin-right: 30%;
+        }
+    }
+
+    &__about{
+        width: 270px;
+        height: 290px;
+
+        background-image: url(../img/svg/eclipse_3.svg);
+        background-size: 100% auto;
+        background-position: center center;
+
+        position: absolute;
+        right: -30px;
+        top: 36%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p{
+            color: #5C5853;
+            max-width: 176px;
+            font-family: $tt;
+            margin-top: 28px;
+            margin-left: 21px;
+
+            transform: rotate(-8deg);
+        }
+    }
+
+    &__image{
+        max-width: 513px;
+        width: 100%;
+    }
+}

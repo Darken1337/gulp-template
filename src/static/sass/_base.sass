@@ -1,15 +1,19 @@
 html
   scroll-behavior: smooth
-  font-size: 16px
-  font-family: 'HelveticaNeueCyr', sans-serif
+  font-size: 20px
+  font-family: $noah
   color: $black
+  line-height: 1.25
+
+body
+  background-color: $white
     
 *, *::before, *::after
   box-sizing: border-box
     
 .container
   width: 100%
-  max-width: 1170px
+  max-width: 1310px
   padding: 0 15px
   margin: 0 auto
 
@@ -37,14 +41,23 @@ a,
 button
   display: inline-block
   text-decoration: none
-  border: 0
   background: transparent
   color: inherit
   outline: 0
-  cursor: pointer
-  transition: all .3s ease
+  padding: 0
   &:focus
     outline: 0
+
+a,
+button,
+[type="submit"]
+  cursor: pointer
+  transition: all .3s ease
+  font-family: $noah
+  border: 0
+
+a:hover
+  text-decoration: underline
 
 input
   display: inline-block
@@ -54,3 +67,6 @@ input
 img
   max-width: 100%
   height: auto
+
+.content
+  overflow-x: hidden

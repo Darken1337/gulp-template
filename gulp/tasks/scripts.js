@@ -39,8 +39,7 @@ module.exports = function() {
   })
 
   $.gulp.task('scripts-lib', () => {
-    return $.gulp.src(['node_modules/jquery/dist/jquery.min.js',
-      'node_modules/slick-carousel/slick/slick.min.js'])
+    return $.gulp.src('src/static/libs/*.js')
       .pipe($.gulp.dest('build/static/libs/js'))
       .pipe($.bs.reload({
         stream: true

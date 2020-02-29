@@ -1,0 +1,15 @@
+.modal-request#send-request
+    .modal-request__inner
+        .modal-request__title Оставь свои данные!
+        .modal-request__subtitle Я перезвоню тебе в течение дня и подробно все расскажу
+        .modal-request__fields
+            input(type="text" placeholder="Имя").input
+            input(type="tel" placeholder="+380(__)___-__-__" data-mask="phone").input
+            input(type="email" placeholder="ivan@ivanov.com").input
+        input.modal-request__submit.button-medium.button-orange(type="submit" value="Оставить заявку")
+        .modal-request__terms Нажимая на кнопку, я соглашаюсь с Политикой конфиденциальности
+
+.modal-overlay
+    button(type="button" data-action="close-modal").modal-overlay__close
+        img(src="./static/img/svg/close.svg", alt="Закрыть")
+        
