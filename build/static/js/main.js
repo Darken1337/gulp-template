@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
         $(this).toggleClass('active');
         menuWrap.toggleClass('active');
         $('body').toggleClass('o-hidden');
-        navigation.toggleClass('active')
+        navigation.toggleClass('active');
 
     })
 
@@ -27,6 +27,15 @@ jQuery(document).ready(function($){
         $('html, body').animate({
             scrollTop: scrollToOffsetTop
         }, 400, 'linear')
+
+        if(menuWrap.hasClass('active')){
+
+            menuWrap.removeClass('active');
+            navigation.removeClass('active');
+            $('body').removeClass('o-hidden');
+            hamb.removeClass('active');
+
+        }
 
     })
 
@@ -57,9 +66,8 @@ jQuery(document).ready(function($){
                 currentSection = {};
 
             for (let i = 0; i < this.breakpoints.length; i++) {
-                console.log(windowOffset, this.breakpoints[i].offsetTop );
                 
-                if(windowOffset <= this.breakpoints[i].offsetTop + this.breakpoints[i].section.outerHeight()/2 ){
+                if(windowOffset <= this.breakpoints[i].offsetTop ){
                     
                     currentSection = this.breakpoints[i];
 
