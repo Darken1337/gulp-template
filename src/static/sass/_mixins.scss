@@ -26,6 +26,10 @@
            
 }
   
+@mixin customMedia($break){
+  @media (max-width: $break) { @content };
+}
+
 @mixin centerItem{
   position: absolute;
   top: 50%;

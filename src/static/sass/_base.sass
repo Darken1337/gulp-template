@@ -1,22 +1,22 @@
 html
-  scroll-behavior: smooth
-  font-size: 20px
-  font-family: $noah
-  color: $black
+  font-size: 18px
+  font-family: $oswald
+  color: $white
   line-height: 1.25
 
 body
-  background-color: $white
+  background-color: #0e0e0e
     
 *, *::before, *::after
   box-sizing: border-box
     
 .container
   width: 100%
-  max-width: 1310px
-  padding: 0 15px
+  max-width: 1290px
+  padding: 0 15px 0 123px
   margin: 0 auto
-
+  +customMedia(1024px)
+    padding: 0 30px
 form
   margin: 0
 
@@ -53,11 +53,11 @@ button,
 [type="submit"]
   cursor: pointer
   transition: all .3s ease
-  font-family: $noah
+  font-family: $oswald
   border: 0
 
 a:hover
-  text-decoration: underline
+  color: #31ABEF
 
 input
   display: inline-block
@@ -69,4 +69,4 @@ img
   height: auto
 
 .content
-  overflow-x: hidden
+  overflow: hidden

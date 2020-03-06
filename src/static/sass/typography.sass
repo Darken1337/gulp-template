@@ -1,0 +1,96 @@
+.title-primary
+    font-weight: 700
+    font-size: 54px
+    line-height: 80px
+    letter-spacing: 0.07em
+    +customMedia(1024px)
+        font-size: 32px
+        line-height: 47px
+
+.title-secondary
+    font-weight: 700
+    font-size: 34px
+    line-height: 50px
+    letter-spacing: 0.07em
+    +customMedia(1024px)
+        font-size: 16px
+        line-height: 24px
+
+.title-tertiary
+    font-size: 20px
+    line-height: 1.5
+    font-weight: 400
+    letter-spacing: 0.07em
+
+.color-blue
+    color: $blue
+
+.button-medium
+    padding: 13px 50px
+    font-family: $ubuntu
+    font-weight: 700
+    line-height: 1
+    font-size: 18px
+    
+.button_blue-border
+    color: $white
+    border: 3px solid $blue
+    &:hover
+        background-color: #31ABEF !important
+    &:active
+        background-color: #31ABEF !important
+
+.text
+    font-weight: 300
+    font-size: 18px
+    font-family: $ubuntu
+    +customMedia(1024px)
+        font-size: 14px
+
+.checkbox
+    font-family: $ubuntu
+    font-weight: 300
+    font-size: 14px
+    line-height: 16px
+    color: #FFFFFF
+    display: inline-block
+    input[type="checkbox"]
+        display: none
+        &:checked + .checkbox__box
+            background-image: url(../img/svg/check.svg)
+    &__box
+        display: inline-block
+        width: 15px
+        height: 15px
+        border: 1px solid #31ABEF
+        margin-right: 10px
+        background-repeat: no-repeat
+        background-size: 100% 100%
+        background-position: center center
+        vertical-align: middle
+    &__text
+        vertical-align: middle
+    a
+        font-family: $ubuntu
+        text-decoration: underline     
+
+.input
+    padding: 17px 27px
+    background-color: #161616
+    font-family: $ubuntu
+    font-weight: 300
+    font-size: 14px
+    color: $white
+    width: 100%
+    border: 0
+
+html .show-desktop
+    @media screen and (max-width: 1024px)
+        display: block
+    
+html .show-mobile
+    @media screen and (min-width: 1025px)
+        display: none
+
+.o-hidden
+    overflow: hidden
