@@ -1,0 +1,136 @@
+include ../../featured/parts/feature-tile
+
+mixin menuDrop(text)
+    .menu-category(data-dropdown="body")
+        .menu-category__content
+            .menu-category__item
+                .menu-category__title=text
+                ul.menu-category-list
+                    li
+                        a(href="") Аквадистилляторы
+                    li
+                        a(href="") Бани
+                    li
+                        a(href="") Аквадистилляторы
+                    li
+                        a(href="") Бани
+                    li
+                        a(href="") Аквадистилляторы
+                    li
+                        a(href="") Бани
+                    li
+                        a(href="") Аквадистилляторы
+                    li
+                        a(href="") Бани
+                    li
+                        a(href="") Аквадистилляторы
+            .menu-category__item
+                .menu-category__title Ещё какое то оборудование
+                ul.menu-category-list
+                    li
+                        a(href="") Аквадистилляторы
+                    li
+                        a(href="") Бани
+            .menu-category__item
+                .menu-category__title Ещё какое то оборудование
+                ul.menu-category-list
+                    li
+                        a(href="") Аквадистилляторы
+                    li
+                        a(href="") Бани
+        .menu-category__featured
+            +featureTile(4)
+
+
+nav.main-menu-wrap
+    .container
+        ul.main-menu
+            li(data-dropdown="open-main")
+                a(href="").main-menu__link--headline.main-menu__link
+                    svg.hamb-menu 
+                        use(xlink:href="./img/sprites.svg#hamb-menu")
+                    span Каталог по направлениям
+                .menu-dropdown(data-dropdown="body-main")
+                    ul.menu-dropdown__categories
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link.active
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('dasdasdasdsa')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('dsadasdas[ettt')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('2121231321')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('мррррррррррррр')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('huuuuuuu')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('mewwwww')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('feeeee')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('shhhh')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('pfffff')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('mou')
+                        li(data-dropdown="open")
+                            a(href="").menu-dropdown__link 
+                                span Каталки
+                                svg.caret 
+                                    use(xlink:href="./img/sprites.svg#caret")
+                            +menuDrop('dsadsa')
+
+            li
+                a(href="").main-menu__link
+                    span Оборудование
+            li
+                a(href="").main-menu__link
+                    span Мебель
+            li
+                a(href="").main-menu__link
+                    span Скидки
+            li
+                a(href="").main-menu__link
+                    span Прайс-лист
+            li
+                a(href="").main-menu__link
+                    span Коммерческое предложение

@@ -4,25 +4,12 @@ module.exports = function() {
           .pipe($.plag.plumber())
           .pipe($.plag.plumber.stop())
           .pipe($.plag.concat('main.js'))
-          .pipe($.gulp.dest('build/static/js'))
+          .pipe($.gulp.dest('build/js'))
           .pipe($.bs.reload({
             stream: true
           }))
   })
 
-  $.gulp.task('scripts:modules', () => {
-    return $.gulp.src('src/static/js/modules/*.js')
-            .pipe($.plag.plumber())
-            .pipe($.plag.plumber.stop())
-            .pipe($.uglifyEs())
-            .pipe($.plag.rename({
-              extname: '.min.js'
-            }))
-            .pipe($.gulp.dest('build/static/js/modules'))
-            .pipe($.bs.reload({
-              stream: true
-            }))
-  })
 
   $.gulp.task('scripts:build', () => {
       return $.gulp.src('src/static/js/*.js')
@@ -32,15 +19,15 @@ module.exports = function() {
       .pipe($.plag.rename({
         extname: '.min.js'
       }))
-      .pipe($.gulp.dest('build/static/js'))
+      .pipe($.gulp.dest('build/js'))
       .pipe($.bs.reload({
         stream: true
       }))
   })
 
   $.gulp.task('scripts-lib', () => {
-    return $.gulp.src('src/static/libs/*.js')
-      .pipe($.gulp.dest('build/static/libs/js'))
+    return $.gulp.src(['src/static/libs/*.js', './node_modules/svg4everybody/dist/svg4everybody.min.js'])
+      .pipe($.gulp.dest('build/libs/js'))
       .pipe($.bs.reload({
         stream: true
       }))

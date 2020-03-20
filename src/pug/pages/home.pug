@@ -1,10 +1,15 @@
 extends ../layout/main
 
 block variables
-    -var title = Главная
+    -var title = 'Главная'
 
 block content
 
     .content
-        include ../blocks/header
+        include ../blocks/header/index
+        include ../blocks/banner
+        include ../blocks/category/index
+        include ../blocks/featured/index
+        include ../blocks/about
+        include ../blocks/subscribe
         include ../blocks/footer

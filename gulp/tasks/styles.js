@@ -16,9 +16,12 @@ module.exports = function() {
       .pipe($.plag.rename({
         extname: '.min.css'
       }))
+      .pipe($.plag.postcss([
+        require('tailwindcss')
+      ]))
       .pipe($.plag.sourcemaps.write())
       .pipe($.plag.plumber.stop())
-      .pipe($.gulp.dest('build/static/css'))
+      .pipe($.gulp.dest('build/css'))
       .pipe($.bs.reload({
         stream: true
       }));
@@ -56,7 +59,7 @@ module.exports = function() {
         title: "style"
       }))
       .pipe($.plag.plumber.stop())
-      .pipe($.gulp.dest('build/static/css'))
+      .pipe($.gulp.dest('build/css'))
       .pipe($.bs.reload({
         stream: true
       }));

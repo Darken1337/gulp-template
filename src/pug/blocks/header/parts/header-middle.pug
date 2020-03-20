@@ -1,0 +1,19 @@
+.middle-header-wrap
+    .container
+        .middle-header
+            .logo
+                img(src="./img/logo.svg", alt="Логотип")
+            form.search-wrap
+                input(type="search" placeholder="Поиск товара по каталогу")
+                button(type="submit").search-wrap__button
+            .middle-options
+                a(href="").middle-options__item
+                    svg
+                        use(xlink:href="./img/sprites.svg#compare")
+                a(href="").middle-options__item
+                    svg.fill-none
+                        use(xlink:href="./img/sprites.svg#like")
+                a(href="").middle-options__item.cart
+                    .cart__badge 3
+                    svg
+                        use(xlink:href="./img/sprites.svg#cart")

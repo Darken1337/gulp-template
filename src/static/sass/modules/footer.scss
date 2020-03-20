@@ -1,0 +1,63 @@
+.footer{
+    padding: 105px 0 200px;
+}
+
+.footer-menus{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto 94px;
+
+    max-width: 985px;
+}
+
+.footer-menu{
+
+    max-width: 158px;
+
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    line-height: 17px;
+    
+    a{
+        font-family: $ff_mono;
+    }
+
+    & > *:not(:last-child){
+        margin-bottom: 28px;
+    }
+
+}
+
+.footer-shipping{
+    max-width: 985px;
+    margin: 0 auto 178px;
+    font-family: $ff_mono;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.05em;
+    color: #777777;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 88px;
+    & > *:not(:last-child){
+        margin-right: 80px;
+    }
+}
+
+.footer-links__socials{
+    & > *:not(:last-child){
+        margin-right: 55px;
+    }
+}
+
+.footer-info{
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    font-family: $ff_mono;
+}
