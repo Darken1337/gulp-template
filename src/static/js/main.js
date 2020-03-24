@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 svg4everybody();
 
 var menuDropInit = {
@@ -63,6 +64,8 @@ var menuDropInit = {
 
 menuDropInit.init();
 =======
+=======
+>>>>>>> parent of d292c08... clean
 =======
 >>>>>>> parent of d292c08... clean
 jQuery(document).ready(function($){
@@ -159,6 +162,10 @@ jQuery(document).ready(function($){
     })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+})
+>>>>>>> parent of d292c08... clean
+=======
 })
 >>>>>>> parent of d292c08... clean
 =======

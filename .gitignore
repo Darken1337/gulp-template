@@ -29,3 +29,14 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows
+build/index.html
+src/pug/blocks/about.pug
+src/pug/blocks/banner.pug
+src/pug/blocks/footer.pug
+src/pug/pages/home.pug
+src/static/js/main.js
+src/static/sass/modules/about.scss
+src/static/sass/modules/banner.scss
+src/static/sass/modules/footer.scss
+src/static/sass/pages/home.sass
+src/static/sass/typography.sass
