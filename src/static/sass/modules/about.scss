@@ -1,4 +1,5 @@
 #s-about{
+<<<<<<< HEAD
     box-shadow: 0 -6px 9px rgba(#000000, .1);
 }
 
@@ -87,3 +88,67 @@
 
     }
 }
+=======
+    padding: 115px 0 168px;
+
+    background-image: url(../img/about-bg.png);
+    background-position: left center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+    @include customMedia(1024px){
+        background-image: url(../img/about-bg-mobile.png);
+        background-position: top center;
+        background-size: 50% auto;
+        padding: 62px 0 81px;
+    }
+    @include customMedia(767px){
+        background-size: 85% auto;
+        background-position: 60% top;
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    @include customMedia(1024px){
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    &__content{
+        margin-right: 83px;
+        @include customMedia(1024px){
+            margin-right: 0;
+            margin-bottom: 22px;
+        }
+    }
+    .title-secondary{
+        max-width: 350px;
+        margin-bottom: 40px;
+        @include customMedia(1024px){
+            margin-bottom: 20px;
+            max-width: 235px;
+        }
+    }
+    &__image{
+        min-width: 558px;
+        width: 558px;
+        height: 558px;
+        line-height: 0;
+        margin-bottom: 20px;
+        @include customMedia(1290px){
+            min-width: initial;
+            flex-shrink: .5;
+            min-width: auto;
+            height: auto;
+            margin-bottom: 0;
+        }
+        @include customMedia(1024px){
+            max-width: 290px;
+        }
+
+        
+    }
+}
+>>>>>>> parent of d292c08... clean

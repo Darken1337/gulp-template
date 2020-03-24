@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer{
     padding: 105px 0 200px;
 }
@@ -60,4 +61,145 @@
     line-height: 16px;
     letter-spacing: -0.05em;
     font-family: $ff_mono;
+=======
+#s-footer{
+    padding-top: 30px;
+    @include customMedia(1024px){
+        padding-top: 0;
+        background-image: url(../img/footer-bg-mobile.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-bottom: 40px;
+    }
+}
+
+.footer{
+    background-image: url(../img/footer-bg.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    @include customMedia(1024px){
+        background-image: none;
+    }
+    .title-secondary{
+        margin-bottom: 20px;
+    }
+    .text{
+        max-width: 292px;
+        margin-bottom: 40px;
+        @include customMedia(1024px){
+            max-width: 227px;
+        }
+    }
+}
+
+.form-callback{
+    margin-bottom: 86px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    & > *:not(:last-child){
+        margin-right: 21px;
+        @include customMedia(1024px){
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .checkbox{
+        margin-bottom: 18px;
+        width: 100%;
+        @include customMedia(1024px){
+            order: 2;
+        }
+    }
+
+    &__fields{
+        display: flex;
+        align-items: center;
+        width: calc(100% - 20px - 256px );
+        @include customMedia(1024px){
+            order: 1;
+            width: 100%;
+            flex-direction: column;
+
+        }
+    }
+
+    &__input{
+        width: 100%;
+        &:not(:last-child){
+            margin-right: 20px;
+            @include customMedia(1024px){
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .button_blue-border{
+        background-color: transparent;
+        font-weight: 400;
+        @include customMedia(1024px){
+            order: 3;
+        }
+    }
+}
+
+.callback{
+    @include customMedia(1024px){
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.contacts{
+    @include customMedia(1024px){
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .title-secondary{
+        margin-bottom: 18px;
+        @include customMedia(1024px){
+            margin-bottom: 40px;
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        .logo{
+            margin-right: 104px;
+            @include customMedia(1024px){
+                display: none;
+            }
+        }
+    }
+}
+
+.menu-footer{
+    display: flex;
+    align-items: center;
+    @include customMedia(1024px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    & >*:not(:last-child){
+        margin-right: 100px;
+        @include customMedia(1024px){
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    &__link{
+        font-weight: 300;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        font-family: $ubuntu;
+        img{
+            margin-right: 21px;
+        }
+    }
+>>>>>>> parent of d292c08... clean
 }
