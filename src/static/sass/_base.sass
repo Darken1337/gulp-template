@@ -4,20 +4,17 @@
   box-sizing: border-box
 
 html
-  font-size: 14px
-  color: $black
-  line-height: 1.2
-  font-family: $lato
-
-.content
-  min-width: 1140px
+  font-size: 16px
+  color: $gray-400
+  line-height: 1.15
+  font-family: $ff-reg
 
 body
-  background-color: #fff
+  background-color: $gray-100
     
 .container
   width: 100%
-  max-width: 1170px
+  max-width: 1240px
   margin: 0 auto
   padding: 0 15px
 
@@ -60,33 +57,18 @@ button
   &:focus
     outline: 0
 
-fieldset
-  border: 0
-  padding: 0
-  margin: 0
-
 a,
 button,
-input[type="submit"]
+[type="submit"]
   cursor: pointer
   transition: all .3s ease
   border: 0
-  font-family: $lato
+  font-family: $ff-reg
 
 input
   display: inline-block
   outline: 0
   cursor: text
-  font-family: $lato
-
-textarea
-  font-family: $lato
-  resize: vertical
-  min-height: 3em
-
-textarea:focus
-  box-shadow: none
-  outline: none
 
 img
   max-width: 100%
