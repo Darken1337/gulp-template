@@ -1,0 +1,22 @@
+.nav-top
+    .logo
+        img(src="./img/svg/logo.svg", alt="")
+    ul.nav-top__menu
+        li
+            a(href="") Все товары
+        li
+            a(href="") Доставка
+    ul.nav-top__contacts
+        li
+            a(href="tel:8(499) 390-04-47") 8(499) 390-04-47
+        li
+            a(href="mailto:loftkom@mail.ru") loftkom@mail.ru
+    a.nav-top__cart
+        svg.icon-33
+            use(xlink:href="./img/sprites.svg#cart")
+    form(action="#").search
+        .search__input
+            input.input(placeholder="Поиск по сайту" type="search")
+            .search__icon
+                img(src="./img/svg/search.svg", alt="Поиск")
+        button(type="submit").search__button Поиск

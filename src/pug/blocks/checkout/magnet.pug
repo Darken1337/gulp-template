@@ -1,0 +1,53 @@
+.checkout
+    h1.title-secondary Магниты
+    .checkout__content
+        p(style="font-size: 13px; line-height: 16px; font-weight: 600; font-family: 'Montserrat Alternates'") Дополнительное направление нашей компании является изготовление магнитов с нанесением любой информации заказчика.
+        p &nbsp;
+        p &nbsp;
+        p(style="font-size: 14px; line-height: 17px;") Рекламные магниты с логотипом и контактными данными Вашей компании помогут приобрести популярность и найти новых клиентов. Подобные изделия станут еще более эффективными,<br>если на них будет присутствовать емкое графическое изображение, характеризующее направление деятельности организации.
+        p(style="font-size: 14px; line-height: 17px;") &nbsp;
+        p(style="font-size: 14px; line-height: 17px;") Данную продукцию Вы можете добавить в одноразовые наборы. После использования набора Ваш клиент сохранит себе магнит на долгую память.
+        p &nbsp;
+        p &nbsp;
+        p(style="font-size: 13px; line-height: 16px; font-weight: 600; font-family: 'Montserrat Alternates'") Возможность изготовления магнитов любой геометрической формы и размеров.
+    .checkout-form.checkout-form--magnets
+        .title-secondary Форма расчета
+        .checkout__group.checkout-form__info
+            .checkout__fields.checkout__fields--small
+                .checkout-field
+                    .checkout-field__name Тираж
+                    .checkout-field__input
+                        input(type="text" placeholder="100")
+                .checkout-field
+                    .checkout-field__name Размер магнита
+                    .checkout-field__input
+                        input(type="text" placeholder="60мм*105мм")
+            .checkout-attachment
+                .checkout-attachment__title 
+                    p <span class="font-montserat weight-600">Логотип:</span>
+                    p прикрепите файл Вашего логотипа
+                    p в формате <span class="font-montserat weight-600">AI. / PDF. / PNG.</span> или <span class="font-montserat weight-600">JPG</span>.
+                .checkout-attachment__action
+                    .checkout-attachment__button 
+                        span Прикрепить
+                        .checkout-attachment__button-plus +
+                    .checkout-attachment__subscription *до 10 мб
+        .checkout__fields
+            .checkout-field
+                .checkout-field__name Контактное лицо
+                .checkout-field__input
+                    input(type="text" placeholder="Иванов Иван Иванович")
+            .checkout-field
+                .checkout-field__name Номер телефона
+                .checkout-field__input
+                    input(type="text" placeholder="Введите номер")
+            .checkout-field
+                .checkout-field__name Электронная почта
+                .checkout-field__input
+                    input(type="text" placeholder="Введите E-mail")
+            .checkout-field
+                .checkout-field__name Электронная почта
+                .checkout-field__textarea
+                    textarea( placeholder="Оставьте комментарий")
+        .checkout__submit
+            input(type="submit", value="Рассчитать")

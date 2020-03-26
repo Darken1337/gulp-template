@@ -1,0 +1,73 @@
+.checkout
+    h1.title-secondary Картонная продукция на заказ
+    .checkout__content
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'") Наша компания изготавливает упаковочные боксы и ланч-боксы <br>из высококачественного целлюлозного картона с нанесением ламинации разного типа пленок и оттенков. Возможность нанесение логотипа любой сложности.
+        p &nbsp;
+        p &nbsp;
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'") Преимущества ланч-боксов из картона:
+        p &nbsp;
+        p &nbsp;
+        p · Идеально подходят для доставки готовых блюд
+        p &nbsp;
+        p · Устойчивость к жиру и влаге за счет ламинации
+        p &nbsp;
+        p · Разнообразие размеров и форм
+        p &nbsp;
+        p · Возможность разогрева в СВЧ-печи
+        p &nbsp;
+        p · Высокая безопасность и экологичность
+        p &nbsp;
+        p · Не выделяет вредных, токсичных веществ
+        p &nbsp;
+        p &nbsp;
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'") Упаковочные боксы идеально подходят для кондитерских изделий, небольших подарков и презентов, так же можно использовать в качестве упаковки небольшой продукции.
+    .checkout-form.checkout-form--paper
+        .title-secondary Форма расчета
+        .checkout__group
+            .checkout__fields.checkout__fields--small
+                .checkout-field
+                    .checkout-field__name Тираж
+                    .checkout-field__input
+                        input(type="text" placeholder="100")
+                .checkout-field
+                    .checkout-field__name Размер магнита
+                    .checkout-field__input
+                        input(type="text" placeholder="60мм*60мм*60мм")
+        .checkout-form__laminate
+            .checkout-field
+                .checkout-field__name Ламинация
+                .checkout-field__radio
+                    fieldset
+                        label.checkbox.checkbox--full
+                            span.checkbox__text Да
+                            input(type="radio" name="laminate")
+                            span.checkbox__box
+                                svg
+                                    use(xlink:href="./img/sprites.svg#check-icon")
+                        label.checkbox.checkbox--full
+                            span.checkbox__text Нет
+                            input(type="radio" name="laminate")
+                            span.checkbox__box
+                                svg
+                                    use(xlink:href="./img/sprites.svg#check-icon")
+        .checkout__fields
+            .checkout-field
+                .checkout-field__name Контактное лицо
+                .checkout-field__input
+                    input(type="text" placeholder="Иванов Иван Иванович")
+            .checkout-field
+                .checkout-field__name Номер телефона
+                .checkout-field__input
+                    input(type="text" placeholder="Введите номер")
+            .checkout-field
+                .checkout-field__name Электронная почта
+                .checkout-field__input
+                    input(type="text" placeholder="Введите E-mail")
+            .checkout-field
+                .checkout-field__name 
+                .checkout-field__textarea
+                    textarea( placeholder="Оставьте комментарий")
+        .checkout__submit
+            input(type="submit", value="Рассчитать")

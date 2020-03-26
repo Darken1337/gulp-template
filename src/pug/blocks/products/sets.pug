@@ -1,0 +1,52 @@
+mixin set
+    .tile.tile--set
+        .tile__image
+            img(src="./img/product.png", alt="")
+        .tile__content
+            h3.tile__title
+                span Набор одноразовых приборов № 2 
+                span.tile__title--black (ложка, салфетка бумажная)
+            fieldset.tile__type
+                label.checkbox
+                    span.checkbox__text Стандарт
+                    input(type="radio" name="type")
+                    span.checkbox__box
+                        svg
+                            use(xlink:href="./img/sprites.svg#check-icon")
+                label.checkbox
+                    span.checkbox__text Премиум
+                    input(type="radio" name="type")
+                    span.checkbox__box
+                        svg
+                            use(xlink:href="./img/sprites.svg#check-icon")
+            .tile__colors
+                .tile__colors-title Цвет:
+                fieldset
+                    .tile__colors-radios
+                        label.radio.radio--black
+                            input(type="radio" name="product-set")
+                            span.radio__box
+                                svg
+                                    use(xlink:href="./img/sprites.svg#check-icon")
+                        label.radio.radio--white
+                            input(type="radio" name="product-set")
+                            span.radio__box
+                                svg
+                                    use(xlink:href="./img/sprites.svg#check-icon")
+            .tile__quantity
+                .tile__quantity-title <span class="weight-700">400</span> шт./кор.
+                .product-quantity 
+                    button.product-quantity__minus
+                        span
+                    input(type="text" onkeyup="this.style.width = ((this.value.length + 1) * 8) + 'px';" value="1")
+                    button.product-quantity__plus
+                        span
+                        span
+            .tile__state В наличии на складе
+            .tile__price Цена: <span class="weight-700">1,08</span> руб./кор.
+            .tile__total Общая стоимость: <span class="weight-700">1620</span> руб
+            button(type="button").tile__button
+                span В корзину
+                svg.icon-33
+                    use(xlink:href="./img/sprites.svg#cart")
+                

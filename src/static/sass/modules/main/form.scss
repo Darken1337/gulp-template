@@ -1,0 +1,72 @@
+#s-callback{
+    padding: 50px 0 106px;
+    margin-bottom: 11px;
+}
+
+.callback{
+    max-width: 618px;
+    margin: 0 auto;
+    &__subscribtion{
+        font-size: 16px;
+        color: $red;
+        margin-bottom: 33px;
+        text-align: center;
+    }
+}
+
+.form-main{
+    background-color: #A395AF;
+    border-radius: 18px;
+    padding: 80px 98px 39px;
+
+    &__title{
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 33px;
+        text-align: center;
+        font-family: $montserat;
+    }
+    &__fields{
+        margin-bottom: 30px;
+        & > *:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__input,
+    &__textarea{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__input{
+        input{
+            width: 100%;
+            padding: 0 30px;
+            line-height: 41px;
+            background-color: #fff;
+        }
+    }
+
+    &__textarea{
+        textarea{
+            height: 105px;
+            padding: 16px 30px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 18px;
+        }
+    }
+
+    &__button{
+        background-color: #71277D;
+        box-shadow: 4px 6px 15px #8F64BB, inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 18px;
+        display: block;
+        margin:  0 auto;
+        padding: 15px 32px;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+}

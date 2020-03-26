@@ -1,0 +1,25 @@
+extends ../layout/main
+
+block variables
+    -var title = 'Наборы'
+
+block content
+
+    include ../blocks/products/sets
+
+    .content
+        include ../blocks/header/index
+        .content-w-sidebar
+            include ../blocks/sidebar
+            main.main-w-sidebar
+                .sets
+                    h2.title-secondary Готовые наборы одноразовых приборов
+                    .sets__wall
+                        +set
+                        +set
+                        +set
+                        +set
+                        +set
+                        +set
+                        +set
+        include ../blocks/footer

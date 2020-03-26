@@ -1,8 +1,24 @@
-- var activePage = {home: true, category: false}
+- var activePage = {home: false, nabori: false, paper: false, magnetProd: false, paperProd: false, sacharum: false, wetServets: true}
 
 if activePage.home
     include pages/home
 
-if activePage.category
-    include pages/category
+if activePage.nabori
+    include pages/nabori
+
+if activePage.paper
+    include pages/paper-servets
+
+if activePage.magnetProd
+    include pages/magnets
+
+if activePage.paperProd
+    include pages/papers
+
+if activePage.sacharum
+    include pages/sacharum
+
+if activePage.wetServets
+    include pages/wet-servets
+
 

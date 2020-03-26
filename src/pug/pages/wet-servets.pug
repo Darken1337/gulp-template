@@ -1,0 +1,16 @@
+extends ../layout/main
+
+block variables
+    -var title = 'Влажные салфетки'
+
+block content
+
+    include ../blocks/products/paper-servets
+
+    .content
+        include ../blocks/header/index
+        .content-w-sidebar
+            include ../blocks/sidebar
+            main.main-w-sidebar
+                include ../blocks/checkout/wet-servets
+        include ../blocks/footer

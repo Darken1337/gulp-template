@@ -1,0 +1,87 @@
+.checkout
+    h1.title-secondary Сахар в стиках с Вашим логотипом
+    .checkout__content
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'") Наша компания производит сахар в стиках с логотипом любой сложности.
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'") Причины заказать именно у нас:
+        p &nbsp;
+        p · Печать логотипа выполняется FOOD-красками
+        p &nbsp;
+        p · Используемый нами сахар белый свекловичный изготовлен по ГОСТу
+        p &nbsp;
+        p · Для изготовления стиков мы используем высококачественную бумагу
+        p &nbsp;
+        p · Бесплатная разработка макета
+        p &nbsp;
+        p · Предлагаем фасовку в боксы собственного производства по 100 стиков
+        p &nbsp;
+        p &nbsp;
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'")
+            span(style="color: #3B065B") Размер готового стика:
+            |   &nbsp;&nbsp;105*17 мм
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'")
+            span(style="color: #3B065B") Масса стика:
+            |   &nbsp;&nbsp; 5 г.
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'")
+            span(style="color: #3B065B") Минимальный тираж:
+            |   &nbsp;&nbsp;от 4000 шт. (20 кг.)
+        p &nbsp;
+        p(style="font-weight: 600; font-family: 'Montserrat Alternates'")
+            span(style="color: #3B065B") Сроки изготовления:  
+            | &nbsp;&nbsp; от 14 дней
+    .cart-default
+        .cart-default__img
+            img(src="./img/sachar.png")
+        .cart-default__content
+            .cart-default__text Вы можете приобрести сахар в стиках<br> со <span class="weight-600">СТАНДАРТНЫМ</span> дизайном от <span class="weight-600">0,44</span> руб./шт.
+            a.cart-default__button
+                span Перейти
+                svg
+                     use(xlink:href="./img/sprites.svg#arrow-right")
+    .checkout-form.checkout-form--sugar
+        .title-secondary Форма расчета
+        .checkout__group.checkout-form__info
+            .checkout__fields.checkout__fields--small
+                .checkout-field
+                    .checkout-field__name Тираж
+                    .checkout-field__input
+                        input(type="text" placeholder="100")
+                .checkout-field
+                    .checkout-field__name Цветность печати
+                    .checkout-field__input.checkout-field__input--w-caution
+                        input(type="text" placeholder="60мм*60мм*60мм")
+                        .caution-icon
+                            img(src="./img/svg/caution.svg")
+                        .caution * белый цвет является основой Данный цвет не берется в расчет
+            .checkout-attachment
+                .checkout-attachment__title 
+                    p <span class="font-montserat weight-600">Логотип:</span>
+                    p прикрепите файл Вашего логотипа
+                    p в формате <span class="font-montserat weight-600">AI. / PDF. / PNG.</span> или <span class="font-montserat weight-600">JPG</span>.
+                .checkout-attachment__action
+                    .checkout-attachment__button 
+                        span Прикрепить
+                        .checkout-attachment__button-plus +
+                    .checkout-attachment__subscription *до 10 мб
+        .checkout__fields
+            .checkout-field
+                .checkout-field__name Контактное лицо
+                .checkout-field__input
+                    input(type="text" placeholder="Иванов Иван Иванович")
+            .checkout-field
+                .checkout-field__name Номер телефона
+                .checkout-field__input
+                    input(type="text" placeholder="Введите номер")
+            .checkout-field
+                .checkout-field__name Электронная почта
+                .checkout-field__input
+                    input(type="text" placeholder="Введите E-mail")
+            .checkout-field
+                .checkout-field__name 
+                .checkout-field__textarea
+                    textarea( placeholder="Оставьте комментарий")
+        .checkout__submit
+            input(type="submit", value="Рассчитать")

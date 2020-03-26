@@ -1,0 +1,29 @@
+#s-features{
+    background-color: $violet-pale;
+    padding: 72px 0 55px;
+}
+
+.features{
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature{
+    max-width: 362px;
+    font-weight: 500;
+    font-size: 18px;
+
+    display: flex;
+
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &__icon{
+        margin-right: 11px;
+        min-width: 47px;
+        width: 47px;
+        height: 47px;
+    }
+}
